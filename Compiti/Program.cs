@@ -7,8 +7,8 @@ namespace Compiti
         static void Main(string[] args)
         {
             int a = int.MaxValue;
-            Console.WriteLine(a);
-            Console.WriteLine(a + 1);
+            Console.WriteLine(a); //2^31 perchè il valore massimo di un int è 2^31 (un bit è per il segno)
+            Console.WriteLine(a + 1);//-2^31 perchè aggiungendo 1 il numero con trentuno 1 diventa negativo
             int b = -128;
             int c = -b;
             Console.WriteLine(Convert.ToString(b, 2));
@@ -23,7 +23,7 @@ namespace Compiti
             Console.WriteLine(Convert.ToString(number, 2));
             short number1 = (short)number;
             Console.WriteLine(number1);
-           
+            Console.ReadLine();
         }
     }
 }
