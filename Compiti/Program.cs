@@ -16,9 +16,9 @@ namespace Compiti
                 Console.WriteLine(ex.Message);
             }
             int b = -128;
-            int c = -b; //si trasforma in numero positivo
-            Console.WriteLine(Convert.ToString(b, 2)); //si converte in binario il valore b
-            Console.WriteLine(Convert.ToString(c, 2)); //si converte in binario il valore c
+            int c = -b; //si trasforma "b" nel suo opposto
+            Console.WriteLine(Convert.ToString(b, 2)); //si converte in binario il valore "b"
+            Console.WriteLine(Convert.ToString(c, 2)); //si converte in binario il valore "c"
             Console.WriteLine("Inserisci un numero intero: ");
             int value = int.Parse(Console.ReadLine());
             int somma = value;
@@ -27,9 +27,9 @@ namespace Compiti
             somma = somma + value;
             Console.WriteLine($"Il valore opposto a quello inserito è {value} e la somma tra il valore inserito e quello opposto è {somma}");
             long number = 55555;
-            Console.WriteLine(Convert.ToString(number, 2));
-            short number1 = (short)number;
-            Console.WriteLine(number1);
+            Console.WriteLine(Convert.ToString(number, 2)); //si converte in binario il valore "number"
+            short number1 = (short)number; //si trasforma il valore "number" da tipo long a tipo short 
+            Console.WriteLine(number1); //si stampa il valore trasformato in short
             Console.ReadLine();
         }
     }
